@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/socket.io.js"></script>
+    <script src="/user.js"></script>
+    <script src="/js/data.js"></script>
+    <script src="/js/functions.js"></script>
+    <script src="/js/chardraw.js"></script>
+    <script src="/js/manage.js"></script>
+    <link charset="utf-8" href="/css/client.css" rel="stylesheet" type="text/css">
+    <title>Model Deathmatch</title>
+</head>
+<body>
+<div id="loading-screen">
+    <div class="loading-bar" id="loading-bar-1">
+        <div class="load-top"></div><div class="load-bottom"></div>
+    </div>
+    <div class="loading-bar" id="loading-bar-2">
+        <div class="load-top"></div><div class="load-bottom"></div>
+    </div>
+    <div class="loading-bar" id="loading-bar-3">
+        <div class="load-top"></div><div class="load-bottom"></div>
+    </div>
+</div>
+<div id="loaders">
+    <img class="img-loader" id="mask-loader">
+    <img class="img-loader" id="outline-loader">
+    <img class="img-loader" id="pattern-loader">
+    <canvas id="pattern-canvas" width="250" height="450"></canvas>
+</div>
+<div id="game-window">
+
+<div class="column">
+    <div id="char-creator">
+        <fieldset id="gender-choose">
+            <label><input type="radio" name="gender" class="gender-check" value="m">Male</label>
+            <label><input type="radio" name="gender" class="gender-check" value="f">Female</label>
+        </fieldset>
+        <fieldset id="bodytype-choose">
+            <label><input type="radio" name="bodytype" class="bodytype-check" value="1">A</label>
+            <label><input type="radio" name="bodytype" class="bodytype-check" value="2">B</label>
+            <label><input type="radio" name="bodytype" class="bodytype-check" value="3">C</label>
+        </fieldset>
+
+        <fieldset id="skin-choose">
+            <label><input type="radio" name="skin" class="skin-check" value="1"Light</label>
+            <label><input type="radio" name="skin" class="skin-check" value="2">Fair</label>
+            <label><input type="radio" name="skin" class="skin-check" value="3">Dark</label>
+            <label><input type="radio" name="skin" class="skin-check" value="4">Black</label>
+            <label><input type="radio" name="skin" class="skin-check" value="5">Gradient</label>
+        </fieldset>
+        <button class="button create-model">Create model</button>
+
+    </div>
+    <div id="inventory">
+        <div id="inv-header">
+            <span class="inv-tab selected" tab="0">Head</span>
+            <span class="inv-tab" tab="1">Face</span>
+            <span class="inv-tab" tab="2">Overshirt</span>
+            <span class="inv-tab" tab="3">Undershirt</span>
+            <span class="inv-tab" tab="4">Pants</span>
+            <span class="inv-tab" tab="5">Shoes</span>
+        </div>
+        <div id="inv-cont">
+
+        </div>
+        <button class="button save-model">Save model</button>
+
+    </div>
+</div>
+
+<div class="column" id="char-column">
+    <canvas id="character-canvas" class="char-clothes" width="250" height="450"></canvas>
+    <img id="char-output">
+</div>
+    <div class="column" id="equip-column"></div>
+</div>
+
+
+</body>
+</html>

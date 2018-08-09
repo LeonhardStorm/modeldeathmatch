@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+body {
+  margin: 0;
+  font-family: "Nunito"; }
+
+.img-loader {
+  display: none; }
+
+#character-canvas {
+  display: none; }
+
+#pattern-canvas {
+  display: none; }
+
+#char-creator {
+  width: 250px;
+  float: left; }
+
+.main-container {
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center; }
+
+.loading-bar {
+  width: 0;
+  position: fixed;
+  transition: width 0.5s;
+  background: #01095b;
+  height: 33.4%; }
+
+#loading-bar-2 {
+  background: #d33893;
+  right: 0;
+  top: 33.3%; }
+  #loading-bar-2 .load-top {
+    background: #d33893;
+    color: #ff44b1; }
+
+#loading-bar-3 {
+  top: 66.6%; }
+
+#particles-js {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #01095b; }
+
+.login-window {
+  color: white;
+  padding: 20px;
+  background: rgba(20, 22, 41, 0.47);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+  font-size: 25px;
+  color: white; }
+  .login-window input {
+    width: 394px;
+    height: 34px;
+    padding: 5px 10px;
+    font-size: 22px;
+    background: none;
+    border: 2px dotted white;
+    color: white; }
+    .login-window input:focus {
+      box-shadow: 0px 0px 11px 0px rgba(255, 255, 255, 0.6); }
+  .login-window button {
+    font-size: 20px;
+    background: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 17px;
+    width: 110px; }
+    .login-window button:hover {
+      text-decoration: underline; }
+  .login-window a {
+    margin-left: 211px;
+    color: white !important;
+    font-size: 22px; }
+
+/*# sourceMappingURL=client.css.map */

@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+body{
+  margin:0;
+  font-family: "Nunito";
+}
+
+.img-loader{
+  display:none;
+}
+
+#character-canvas{
+  display:none;
+}
+
+#pattern-canvas{
+  display:none;
+}
+#char-creator{
+  width: 250px;
+}
+
+#char-column{
+  margin-top: 70px;
+}
+
+.column{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button{
+  display: block;
+  margin: 15px auto auto;
+}
+
+.main-container{
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#game-window{
+  position: absolute;
+  display: grid;
+  top: 60px;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+}
+
+#inv-header{
+  width: 420px;
+
+  margin-right: -7px;
+}
+
+.inv-tab {
+  background: #020e90;
+  color: white;
+  padding: 5px 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 0 -5px 0 0;
+}
+
+.selected.inv-tab{
+  background: #01095b;
+}
+
+#inv-cont{
+  background: #01095b;
+height:300px;
+}
+
+//loading screen
+.loading-bar{
+  width:0;
+  position: fixed;
+  transition: width 0.5s;
+  background: #01095b;
+  height:33.4%
+}
+
+#loading-bar-2{
+  background: #d33893;
+  right:0;
+  top:33.3%;
+  .load-top{
+    background: #d33893;
+    color: #ff44b1
+  }
+}
+#loading-bar-3{
+  top:66.6%;
+}
+
+//login screen
+#particles-js{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #01095b;
+}
+
+.login-window {
+  color:white;
+  padding: 20px;
+  background: rgba(20, 22, 41, 0.47);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+  font-size: 25px;
+  color:white;
+  margin-bottom: 10px;
+  input {
+    width: 394px;
+    height: 34px;
+    padding: 5px 10px;
+    font-size: 22px;
+    background: none;
+    border: 2px dotted white;
+    color: white;
+    margin-bottom:10px;
+    &:focus {
+      box-shadow: 0px 0px 11px 0px rgba(255, 255, 255, 0.6);
+
+    }
+  }
+  button{
+    font-size: 20px;
+    background: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 7px;
+    width: 110px;
+    cursor:pointer;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  a{
+    margin-left: 211px;
+    color: white !important;
+    font-size: 22px;
+  }
+  .label{
+    font-size:16px;
+  }
+
+  .success-text{
+    color: #5dd65d;
+    font-size: 22px;
+  }
+  .fail-text{
+    color: red;
+  }
+}
+
+//header
+#header{
+  position: absolute;
+  width: 100%;
+  background: #01095b;
+  font-size: 30px;
+  height: 60px;
+  line-height: 60px;
+  a{
+    color: white;
+    text-decoration: none;
+    margin: 0 25px;
+    cursor:pointer;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  #logout{
+    position: absolute;
+    right: 0;
+  }
+}
+
+#play-cont{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 60px;
+  top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  #play-match{
+    z-index: 9;
+    font-size: 30px;
+    line-height: 60px;
+    color: white;
+    position: absolute;
+    background: #222656;
+    text-align: center;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 0 30px;
+    cursor:pointer;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/socket.io.js"></script>
+    <script src="/matchdata.js"></script>
+
+    <script src="/js/manage.js"></script>
+    <link charset="utf-8" href="/css/client.css" rel="stylesheet" type="text/css">
+    <title>Model Deathmatch</title>
+</head>
+<body>
+<div id="loading-screen">
+  <div class="loading-bar" id="loading-bar-1">
+      <div class="load-top"></div><div class="load-bottom"></div>
+  </div>
+    <div class="loading-bar" id="loading-bar-2">
+        <div class="load-top"></div><div class="load-bottom"></div>
+    </div>
+    <div class="loading-bar" id="loading-bar-3">
+        <div class="load-top"></div><div class="load-bottom"></div>
+    </div>
+</div>
+
+<img class="img-loader" id="mask-loader">
+<img class="img-loader" id="outline-loader">
+<img class="img-loader" id="pattern-loader">
+
+<div class="char-cont">
+    <canvas id="pattern-canvas" width="250" height="450"></canvas>
+    <canvas id="character-canvas" class="char-clothes" width="250" height="450"></canvas>
+    <img id="char-output">
+</div>
+
+
+</body>
+</html>
